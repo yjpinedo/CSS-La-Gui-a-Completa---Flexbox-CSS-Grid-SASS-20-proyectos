@@ -1,0 +1,231 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+
+html {
+    font-size: 62.5%;
+    /** 1REM = 10pX **/
+}
+
+body {
+    background-color: var(--azul);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+}
+
+.caja-curso h1 {
+    margin: 0;
+}
+
+.caja-curso p {
+    font-size: 2.4rem;
+}
+
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.grid-1 {
+    display: grid;
+}
+
+/* Con  grid-template-columns se establecen la cantidad de columnas que se requieren */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+}
+
+/* Con grid-column se establece la posición en que se va ha ubicar el elemento dentro de la grid */
+.grid-2 .box:nth-child(2) {
+    grid-column: 1 / 2;
+}
+
+/* 
+    grid-template-rows se establecen la cantidad de filas que se requieren
+    La función repeat nos ayuda a repetir la cantidad de filas o columnas que queremos con un tamaño en especifico
+    Esta revise dos parametros el primero hace referencia a la cantidad de filas o columnas y el segundo hace referencia al tamaño
+ */
+
+.grid-3 {
+    display: grid;
+    grid-template-rows: repeat(6, 30rem);
+}
+
+.grid-3 .box:nth-child(2) {
+    grid-row: 1 / 2;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    grid-template-columns: repeat(3, 30rem);
+}
+
+.grid-4 .box:nth-child(2) {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.grid-5 {
+    display: grid;
+    grid:
+        /* rows */
+        repeat(2, 30rem) /
+        /* columns */
+        repeat(3, 30rem);
+}
+
+.grid-6 {
+    display: grid;
+    grid:
+        /* rows */
+        repeat(2, 30rem) /
+        /* columns */
+        repeat(3, 30rem);
+    grid-auto-flow: dense;
+}
+
+.grid-6 .box:nth-child(2) {
+    grid-column: 1 / 2;
+}
+
+/* 
+    Las fracciones o fr toma el espacio disponible que tenga el elmento, y lo divide entre la cantidad de fr que se disponga, es decir si tenemos dos elementos y se expicifica una fracción para cada uno, se tomara del 100% el 50% para cada uno    
+*/
+
+.grid-7 {
+    display: grid;
+    grid:
+        /* rows */
+        repeat(2, 1fr) /
+        /* columns */
+        repeat(3, 1fr);
+}
+
+.grid-8 {
+    display: grid;
+    grid:
+        /* rows */
+        repeat(2, 1fr) /
+        /* columns */
+        repeat(3, 1fr);
+    /* column-gap: 3rem;
+    row-gap: 3rem; */
+    gap: 3rem;
+}
+
+.grid-9 {
+    display: grid;
+    height: 120rem;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "principal principal sidebar"
+        "footer footer footer"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2.5fr 1fr 60fr 2.5fr;
+    gap: 3rem;
+}
+
+.grid-9 .box:nth-child(1) {
+    grid-area: header;
+}
+
+.grid-9 .box:nth-child(2) {
+    grid-area: nav;
+}
+
+.grid-9 .box:nth-child(3) {
+    grid-area: principal;
+}
+
+.grid-9 .box:nth-child(4) {
+    grid-area: sidebar;
+}
+
+.grid-9 .box:nth-child(5) {
+    grid-area: footer;
+}
+
+.grid-10 {
+    display: grid;
+    height: 120rem;
+    grid-template:
+        "header header header" 2.5fr
+        "nav nav nav" 1fr
+        "principal principal sidebar" 60fr
+        "footer footer footer" 2.5fr
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.grid-10 .box:nth-child(1) {
+    grid-area: header;
+}
+
+.grid-10 .box:nth-child(2) {
+    grid-area: nav;
+}
+
+.grid-10 .box:nth-child(3) {
+    grid-area: principal;
+}
+
+.grid-10 .box:nth-child(4) {
+    grid-area: sidebar;
+}
+
+.grid-10 .box:nth-child(5) {
+    grid-area: footer;
+}
+
+.grid-11 {
+    display: grid;
+    height: 30rem;
+    grid-template-columns: repeat(6, 1fr);
+    place-content: center;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+}
