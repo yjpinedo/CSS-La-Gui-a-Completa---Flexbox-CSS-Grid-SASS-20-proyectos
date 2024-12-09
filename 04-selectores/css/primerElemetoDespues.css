@@ -1,0 +1,4 @@
+.admin div + p {
+    border: 0.2rem solid rgb(255, 0, 0);
+    padding: 2rem;
+}

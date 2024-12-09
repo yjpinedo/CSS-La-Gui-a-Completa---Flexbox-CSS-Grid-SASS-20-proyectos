@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/etiqueta.css"> -->
+    <!-- <link rel="stylesheet" href="css/clase.css"> -->
+    <!-- <link rel="stylesheet" href="css/masDeUnaClase.css"> -->
+    <!-- <link rel="stylesheet" href="css/clasesAnidadas.css"> -->
+    <!-- <link rel="stylesheet" href="css/id.css"> -->
+    <!-- <link rel="stylesheet" href="css/etiquetaClase.css"> -->
+    <!-- <link rel="stylesheet" href="css/elementos.css"> -->
+    <!-- <link rel="stylesheet" href="css/primerNivelHijo.css"> -->
+    <!-- <link rel="stylesheet" href="css/primerElemetoDespues.css"> -->
+    <!-- <link rel="stylesheet" href="css/atributo.css"> -->
+    <!-- <link rel="stylesheet" href="css/primerHijoLista.css"> -->
+    <!-- <link rel="stylesheet" href="css/ultimoElementoLista.css"> -->
+    <!-- <link rel="stylesheet" href="css/elementoEspecificoLista.css"> -->
+    <!-- <link rel="stylesheet" href="css/exceptoUnElemento.css"> -->
+    <link rel="stylesheet" href="css/primeraLineaPrimeraLetraParrafo.css">
+
+</head>
+<body>
+
+    <div class="caja-curso">
+        <h1>CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos</h1>
+        <p>- Juan De la torre @codigoconjuan</p>
+        <a target="blank" rel="nofollow noopener noreferrer"  href="https://codigoconjuan.com/">Vísita mi sitio Codigo Con Juan</a>
+    </div>
+
+    <div class="contenedor">
+
+        <h2>1.- Selector de Etiqueta</h2>
+
+        <div class="codigo">
+            <p>Primer Texto</p>
+            <p>Segundo Texto</p>
+            <p>3er Texto</p>
+        </div>
+
+
+        <h2>2.- Selector de Clase</h2>
+        <div class="codigo">
+            <p class="primer-parrafo">Primer Texto</p>
+            <p>Segundo Texto</p>
+            <p>3er Texto</p>
+        </div>
+
+        <h2>3.- Selector de 2 Clases</h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto azul mayusculas">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+        </div>
+
+        <h2>4.- Selector de Clases Anidadas</h2>
+
+        <div class="codigo">
+            <header class="header">
+                <div class="descripcion">Descripción sitio web</div>
+            </header>
+            <div class="descripcion">Segunda Descripción</div>
+        </div>
+
+        <h2>5.- Selector de ID</h2>
+
+        <div class="codigo">
+            <p id="encabezado" class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+        </div>
+
+
+        <h2>6.- Selector de Etiqueta y Clase</h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+
+            <div class="texto">
+                Oferta Especial!
+            </div>
+        </div>
+
+        <h2>7.- 2 Elementos </h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+
+            <div class="oferta">
+                Oferta Especial!
+            </div>
+        </div>
+
+        <h2>8.- Primer Nivel de Hijos </h2>
+        <div class="codigo">
+            <div class="admin">
+                <div>
+                    <p>Has Iniciado sesión como: Admin</p>
+                    <div>
+                        <p>Cerrar Sesión aquí</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2>9.- Primer Elemento Después</h2>
+
+        <div class="codigo">
+            <div class="admin">
+                <div>
+                    <p>Cerrar Sesión aquí</p>
+                </div>
+                <p>Has Iniciado sesión como: Admin</p>
+            </div>
+        </div>
+
+
+        <h2>10.- Atributo </h2>
+        <div class="codigo">
+            <nav>
+                <a href="http://www.google.com">Google</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+
+            <input type="tel" id="telefono"  value="1212" />
+        </div>
+
+
+        <h2>11.- Primer Hijo de una lista</h2>
+
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Compra 1</li>
+                <li>Compra 2</li>
+                <li>Compra 3</li>
+                <li>Compra 4</li>
+                <li>Compra 5</li>
+            </ul>
+        </div>
+
+        <h2>12.- último Hijo de una lista </h2>
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Compra 1</li>
+                <li>Compra 2</li>
+                <li>Compra 3</li>
+                <li>Compra 4</li>
+                <li>Compra 5</li>
+            </ul>
+        </div>
+
+        <h2>13.- Elemento en Especifico </h2>
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+                <li>Elemento 6</li>
+                <li>Elemento 7</li>
+                <li>Elemento 8</li>
+                <li>Elemento 9</li>
+                <li>Elemento 10</li>
+                <li>Elemento 11</li>
+                <li>Elemento 12</li>
+                <li>Elemento 13</li>
+                <li>Elemento 14</li>
+                <li>Elemento 15</li>
+                <li>Elemento 16</li>
+                <li>Elemento 17</li>
+                <li>Elemento 18</li>
+                <li>Elemento 19</li>
+                <li>Elemento 20</li>
+                <li>Elemento 21</li>
+                <li>Elemento 22</li>
+                <li>Elemento 23</li>
+                <li>Elemento 24</li>
+                <li>Elemento 25</li>
+                <li>Elemento 26</li>
+                <li>Elemento 27</li>
+                <li>Elemento 28</li>
+                <li>Elemento 29</li>
+                <li>Elemento 30</li>
+                <li>Elemento 31</li>
+                <li>Elemento 32</li>
+                <li>Elemento 33</li>
+                <li>Elemento 34</li>
+                <li>Elemento 35</li>
+                <li>Elemento 36</li>
+                <li>Elemento 37</li>
+                <li>Elemento 38</li>
+                <li>Elemento 39</li>
+                <li>Elemento 40</li>
+                <li>Elemento 41</li>
+                <li>Elemento 42</li>
+                <li>Elemento 43</li>
+                <li>Elemento 44</li>
+                <li>Elemento 45</li>
+                <li>Elemento 46</li>
+                <li>Elemento 47</li>
+                <li>Elemento 48</li>
+                <li>Elemento 49</li>
+                <li>Elemento 50</li>
+                <li>Elemento 51</li>
+                <li>Elemento 52</li>
+                <li>Elemento 53</li>
+                <li>Elemento 54</li>
+                <li>Elemento 55</li>
+                <li>Elemento 56</li>
+                <li>Elemento 57</li>
+                <li>Elemento 58</li>
+                <li>Elemento 59</li>
+                <li>Elemento 60</li>
+                <li>Elemento 61</li>
+                <li>Elemento 62</li>
+                <li>Elemento 63</li>
+                <li>Elemento 64</li>
+                <li>Elemento 65</li>
+                <li>Elemento 66</li>
+                <li>Elemento 67</li>
+                <li>Elemento 68</li>
+                <li>Elemento 69</li>
+                <li>Elemento 70</li>
+                <li>Elemento 71</li>
+                <li>Elemento 72</li>
+                <li>Elemento 73</li>
+                <li>Elemento 74</li>
+                <li>Elemento 75</li>
+                <li>Elemento 76</li>
+                <li>Elemento 77</li>
+                <li>Elemento 78</li>
+                <li>Elemento 79</li>
+                <li>Elemento 80</li>
+                <li>Elemento 81</li>
+                <li>Elemento 82</li>
+                <li>Elemento 83</li>
+                <li>Elemento 84</li>
+                <li>Elemento 85</li>
+                <li>Elemento 86</li>
+                <li>Elemento 87</li>
+                <li>Elemento 88</li>
+                <li>Elemento 89</li>
+                <li>Elemento 90</li>
+                <li>Elemento 91</li>
+                <li>Elemento 92</li>
+                <li>Elemento 93</li>
+                <li>Elemento 94</li>
+                <li>Elemento 95</li>
+                <li>Elemento 96</li>
+                <li>Elemento 97</li>
+                <li>Elemento 98</li>
+                <li>Elemento 99</li>
+                <li>Elemento 100</li>
+            </ul>
+        </div>
+
+        <h2>14.- Seleccionar todos los elementos excepto uno o unos </h2>
+        <div class="codigo">
+            <div class="elementos">
+                <p class="texto">Texto 1</p>
+                <p class="heading">Texto 2</p>
+                <p class="descripcion">Texto 3</p>
+                <p class="oferta">Texto 4</p>
+            </div>
+        </div>
+
+        <h2>15.- Primer Letra y Linea</h2>
+        <div class="codigo">
+                <p class="primer-letra"> Primer parrafo de una noticia</p>
+                <p class="primer-letra"> Primer parrafo de una noticia</p>
+
+                <p class="primer-linea">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, quis repellat quae laborum libero quod nemo placeat alias inventore sit optio dolores, doloribus possimus, provident eligendi beatae asperiores quam maiores!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

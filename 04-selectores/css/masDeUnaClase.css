@@ -1,0 +1,16 @@
+.texto {
+    font-size: 2.5rem;
+}
+
+.azul {
+    color: rgb(0, 0, 255);
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+/* Forma de como selccionar varios clases de un elemento */
+.texto.azul {
+    text-align: center;
+}

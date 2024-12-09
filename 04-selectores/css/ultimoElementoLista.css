@@ -1,0 +1,8 @@
+ul li:last-child {
+    color: rgb(95, 158, 160);
+}
+
+/* Otra alterntiva */
+ul li:last-of-type {
+    color: rgb(95, 158, 160);
+}

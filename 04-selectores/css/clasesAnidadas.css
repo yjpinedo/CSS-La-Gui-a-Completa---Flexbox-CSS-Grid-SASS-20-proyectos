@@ -1,0 +1,9 @@
+
+/* El espacio entre clase hace referencia a que se tienen elementos hijos y padres, donde dependendiendo a la profundidad del arbol se pueden indentidicaar los hijos o los padres */
+.header .descripcion {
+    color: rgb(165, 42, 42);
+}
+
+.descripcion {
+    color: rgb(0, 0, 255);
+}

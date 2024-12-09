@@ -1,0 +1,13 @@
+/* a[href="http://www.google.com"] {
+    color: cadetblue;
+} */
+
+/* La condición ^= busca todos los elementos que inicie con el valor que este despues del igual (=)
+a[href^="http"] {
+    color: cadetblue;
+} */
+
+/* La condición ^= busca todos los elementos que terminen con el valor que este despues del igual (=) */
+a[href$=".com"] {
+    color: cadetblue;
+}
