@@ -1,0 +1,26 @@
+.oferta {
+    background-color: rgb(0, 68, 110);
+    padding: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.precio {
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* En Desktop First cada que se establece un media query es importante el orden, por lo que se recomienda ordenarlos desde las pantallas más grandes hacia las pequeñas adicional se recomienda un solo enfoque, mobile o deskto frist, en lo posible mobile*/
+
+@media (max-width: 800px) {
+    .oferta {
+        max-width: 60rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .oferta {
+        max-width: 100%;
+    }
+}

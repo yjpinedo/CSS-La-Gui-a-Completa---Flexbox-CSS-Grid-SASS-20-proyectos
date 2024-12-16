@@ -1,0 +1,16 @@
+.oferta {
+    background-color: rgb(0, 68, 110);
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio {
+    font-size: 4rem;
+}
+
+/* Cuano se va agregar una tercera condición, en vez de and establecer coma(,) */
+@media (min-width: 600px) and (max-width: 800px) {
+    .oferta {
+        background-color: darkslateblue;
+    }
+}

@@ -1,0 +1,19 @@
+@media (min-width: 550px) { 
+    /* Moviles con pantalla horizontal */
+}
+
+@media (min-width: 768) { 
+    /* Tablet tamaño estandar */
+}
+
+@media (min-width: 1024) { 
+    
+}
+
+@media (min-width: 1200) { 
+    /* Portatil l rededor de 13" */
+}
+
+@media (min-width: 1600) { 
+    /* Monitores */
+}

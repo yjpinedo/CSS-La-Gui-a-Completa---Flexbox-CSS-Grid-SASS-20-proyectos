@@ -1,0 +1,4 @@
+img {
+    max-width: 100%;
+    display: block; /* Quita el espacios que traen las imaganes por defecto en la parte de abajo */
+}
